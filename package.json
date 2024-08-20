@@ -1,0 +1,24 @@
+{
+  "name": "vanity-market-mock-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TepNik/mock-backend.git"
+  },
+  "author": "TepNik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TepNik/mock-backend/issues"
+  },
+  "homepage": "https://github.com/TepNik/mock-backend#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "keccak256": "^1.0.6"
+  }
+}
