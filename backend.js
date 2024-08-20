@@ -36,7 +36,11 @@ app.post("/v1/nonce-manager/nonces", (req, res) => {
 
   console.log("Received nonces, body:", data);
   console.log("Calculated answers:", answers);
-  res.status(200).send("OK");
+
+  console.log("Sleeping...");
+  sleep(1000).then(() => {
+    res.status(200).send("OK");
+  });
 });
 
 app.listen(port, () => {
@@ -72,4 +76,8 @@ function getAnswerForNonce(formattedNonceGeneratorId, nonce) {
     salt,
     answer,
   };
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms || 1000));
 }

@@ -12,6 +12,8 @@ npm install
 
 Before running, a port of the backend can be changed from 3000 to any value in the code.
 
+Also, there is a sleep time in the `/v1/nonce-manager/nonces` endpoint that simulates network latency. It can be configured too.
+
 ```bash
 npm run start
 ```
