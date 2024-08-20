@@ -2,14 +2,22 @@
 
 NodeJS and NPM.
 
-### Install
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run
+### Run backend
+
+Before running, a port of the backend can be changed from 3000 to any value in the code.
 
 ```bash
 npm run start
 ```
+
+### Endpoints
+
+[localhost:3000/v1/nonce-manager/config](http://localhost:3000/v1/nonce-manager/config) (GET)
+
+[localhost:3000/v1/nonce-manager/nonces](http://localhost:3000/v1/nonce-manager/nonces) (POST)
